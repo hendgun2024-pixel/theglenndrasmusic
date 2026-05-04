@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.theglenndrasmusic.twa",
+        "sha256_cert_fingerprints": ["93:E3:03:47:42:22:61:39:C1:36:A5:F3:EB:3E:C4:C5:36:2E:DD:6E:9F:B2:83:D1:AD:80:6D:9D:04:33:39:55"]
+      }
+    }]
