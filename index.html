@@ -1,84 +1,298 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="theme-color" content="#000000"/>
-    
-    <!-- ✅ TAMBAHAN WAJIB ADSENSE: DESKRIPSI & KATA KUNCI LENGKAP -->
-    <meta name="description" content="theglenndrasmusic official fan hub and creator community. Join us to support each other, grow your social media, access exclusive content, and connect with creators worldwide. Safe, free, and trusted platform."/>
-    <meta name="keywords" content="theglenndrasmusic, music creator, fan hub, creator community, grow social media, support creators, youtube, instagram, tiktok, music community, global creators, safe platform"/>
-    <link rel="canonical" href="https://theglenndrasmusic.com/"/>
-    <meta name="author" content="theglenndrasmusic Team"/>
-    <meta name="robots" content="index, follow"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theglenndrasmusic | Official Global Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a2e',
+                        secondary: '#16213e',
+                        accent: '#00f5d4',
+                        gold: '#f7b733',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto { content-visibility: auto; }
+            .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+            .scrollbar-hide::-webkit-scrollbar { display: none; }
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+            .glass { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/ipapi.co@3.0.0/ipapi.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=Inter:wght@600&display=swap" rel="stylesheet"/>
-    
-    <!-- ✅ TAMBAHAN WAJIB: KODE IKLAN OTOMATIS ADSENSE -->
+    <!-- ✅ GOOGLE ADSENSE CODE -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283"
      crossorigin="anonymous"></script>
 
-    <title>theglenndrasmusic — Official Fan Hub & Creator Community</title>
-    
-    <script>window.addEventListener("error",function(e){e.error instanceof DOMException&&"DataCloneError"===e.error.name&&e.message&&e.message.includes("PerformanceServerTiming")&&(e.stopImmediatePropagation(),e.preventDefault())},!0)</script>
-    <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
-    <script defer="defer" src="static/js/main.4871f765.js"></script>
-    <link href="static/css/main.2f73adb6.css" rel="stylesheet"/>
+    <meta name="description" content="Official site of theglenndrasmusic. Global community, live chat, member registration, and creator support worldwide.">
+    <meta name="keywords" content="theglenndrasmusic, global community, live chat, member registration, creator support">
+    <link rel="canonical" href="https://theglenndrasmusic.com/">
 </head>
-<body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+<body class="bg-gradient-to-br from-primary to-secondary min-h-screen font-sans text-white">
 
-    <!-- ✅ TAMBAHAN PENTING: HALAMAN WAJIB ADSENSE (DI SEMBUNYIKAN TAPI ADA DI KODE) -->
-    <div style="display: none;">
-        <!-- Halaman About Us -->
-        <div id="about-us">
-            <h1>About Us</h1>
-            <p>Welcome to theglenndrasmusic, your ultimate destination for music, creativity, and community. Founded in 2026, we are dedicated to bringing creators and fans together from all over the world. Our platform provides a safe, friendly, and free space where everyone can share art, support each other, and grow their online presence. We believe in positivity, respect, and creativity as our core values.</p>
+    <!-- Navbar -->
+    <nav class="glass px-6 py-4 fixed w-full top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2 text-shadow">
+                <i class="fa fa-music"></i> theglenndrasmusic
+            </a>
+            <div class="hidden md:flex gap-6">
+                <a href="#home" class="hover:text-accent transition font-medium">Home</a>
+                <a href="#about" class="hover:text-accent transition font-medium">About</a>
+                <a href="#chat" class="hover:text-accent transition font-bold text-accent">💬 Live Chat</a>
+                <a href="#members" class="hover:text-accent transition font-medium">Membership</a>
+                <a href="#contact" class="hover:text-accent transition font-medium">Contact</a>
+                <a href="https://chat.whatsapp.com/HWgmZah4IuO1t3tImcOauh" target="_blank" class="bg-green-500 hover:bg-green-600 px-3 py-1 rounded-lg transition flex items-center gap-1 font-medium shadow-sm">
+                    <i class="fa fa-whatsapp"></i> Official Group
+                </a>
+            </div>
+            <button class="md:hidden text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
+    </nav>
 
-        <!-- Halaman Privacy Policy -->
-        <div id="privacy-policy">
-            <h1>Privacy Policy</h1>
-            <p>Last updated: May 8, 2026</p>
-            <h2>1. Information We Collect</h2>
-            <p>We only collect your name and country location when you register. We do not collect passwords, emails, or sensitive data. Log files are used only for technical improvement and security, not for tracking personal identity.</p>
-            <h2>2. Cookies</h2>
-            <p>We use cookies to improve user experience and serve advertisements. You can disable cookies in your browser settings at any time.</p>
-            <h2>3. Google AdSense</h2>
-            <p>We use Google AdSense to display ads. Google may use cookies and web beacons to serve ads based on your visit history. You can opt out via <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a>.</p>
-            <h2>4. Contact</h2>
-            <p>For privacy questions: contact@theglenndrasmusic.com</p>
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-6 pt-28 pb-16">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+                <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-tight text-shadow">
+                    Welcome to <span class="text-accent">Global Community</span>
+                </h1>
+                <p class="text-lg text-white/90 leading-relaxed">Official home of theglenndrasmusic. Connect with creators from all countries, register as official member, and grow together safely and freely.</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#chat" class="bg-accent hover:bg-accent/90 text-black font-semibold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl">Enter Live Chat</a>
+                    <a href="https://sub4subworld.theglenndrasmusic.com" target="_blank" class="glass hover:bg-white/20 font-semibold px-8 py-3 rounded-full transition">Visit Sub4Sub World</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/id/1031/600/400" alt="Global Community" class="rounded-2xl shadow-2xl w-full h-auto mt-4 glass p-2">
+            </div>
         </div>
+    </section>
 
-        <!-- Halaman Terms of Service -->
-        <div id="terms-of-service">
-            <h1>Terms of Service</h1>
-            <p>By using our website, you agree to follow our rules: do not post illegal, harmful, or offensive content. You agree to use the platform only for legal and positive purposes. All content provided is for general information only. We reserve the right to terminate access for users who violate these terms.</p>
+    <!-- ✅ LIVE CHAT SECTION + SISTEM ID MEMBER OTOMATIS -->
+    <section id="chat" class="py-16 container mx-auto px-6">
+        <div class="max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6 text-shadow">💬 Official Live Chat</h2>
+            <div class="glass rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-accent/20 py-3 px-4 text-center font-bold text-accent">
+                    🤖 24/7 Global Receptionist • Member ID Generator Active
+                </div>
+                <div id="chatBox" class="h-[450px] overflow-y-auto p-4 bg-white/5 scrollbar-hide"></div>
+                <div class="flex gap-2 p-4 border-t border-white/10">
+                    <input type="text" id="userInput" placeholder="Type your message here..." class="flex-1 px-4 py-2 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-accent text-white placeholder:text-white/60">
+                    <button id="sendBtn" class="bg-accent hover:bg-accent/90 text-black px-5 py-2 rounded-lg font-semibold transition">Send</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Halaman Contact Us -->
-        <div id="contact-us">
-            <h1>Contact Us</h1>
-            <p>Email: contact@theglenndrasmusic.com</p>
-            <p>Website: https://theglenndrasmusic.com</p>
-            <p>Location: Global / Indonesia</p>
+    <!-- About -->
+    <section id="about" class="glass py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-shadow">About Us</h2>
+                <p class="text-white/90 leading-relaxed">We are a global community platform supporting creators worldwide. Connected directly to Sub4Sub World system, we provide safe services, coin system, and official membership for all users from every country.</p>
+            </div>
         </div>
-    </div>
-    <!-- ✅ AKHIR TAMBAHAN WAJIB -->
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-black/40 py-8 text-center text-white/80 text-sm">
+        <div class="container mx-auto px-6">
+            <p class="mb-2">© 2026 theglenndrasmusic | Official Global Community</p>
+            <p>Connected with <a href="https://sub4subworld.theglenndrasmusic.com" target="_blank" class="text-accent hover:underline">Sub4Sub World</a> | Safe & Trusted</p>
+        </div>
+    </footer>
 
-    <a id="emergent-badge" target="_blank" href="https://app.emergent.sh/?utm_source=emergent-badge" style="display:inline-flex!important;box-sizing:border-box;width:178px;height:40px;padding:8px 12px 8px 12px;align-items:center!important;gap:8px;border-radius:50px!important;background:#000!important;position:fixed!important;bottom:16px;right:16px;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,&quot;z-index:9999!important">
-        <svg xmlns="https://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M15.5702 8.13142C15.7729 8.0412 16.0007 8.18878 15.9892 8.4103C15.8374 11.3192 14.0965 14.0405 11.2531 15.3065C8.40964 16.5725 5.2224 16.0453 2.95912 14.2117C2.78676 14.072 2.82955 13.804 3.03219 13.7137L4.95677 12.8568C5.04866 12.8159 5.15446 12.823 5.24204 12.8725C6.73377 13.7153 8.59176 13.8649 10.2772 13.1145C11.9626 12.3641 13.0947 10.8833 13.4665 9.21075C13.4883 9.11256 13.5539 9.02918 13.6457 8.98827L15.5702 8.13142Z" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3066 4.74698L15.5067 5.19653C15.5759 5.35178 15.5061 5.53366 15.3508 5.60278L1.29992 11.8586C1.14467 11.9278 0.962794 11.8579 0.893675 11.7027L0.701732 11.2716L0.693457 11.2531C-1.10317 7.21778 0.711626 2.49007 4.74692 0.693443C8.78221 -1.10318 13.51 0.711693 15.3066 4.74698ZM2.82356 8.55367C2.63552 8.63739 2.41991 8.51617 2.40853 8.31065C2.28373 6.05724 3.53858 3.85787 5.72286 2.88536C7.90715 1.91286 10.3813 2.45199 11.9724 4.05256C12.1175 4.19854 12.0633 4.43988 11.8753 4.5236L2.82356 8.55367Z" fill="white"/>
-        </svg>
-        <p style="color:#fff!important;font-family:Inter,sans-serif!important;font-size:13px!important;font-style:normal!important;font-weight:600!important;line-height:20px!important;margin:0!important;white-space:nowrap!important">Made with Emergent</p>
-    </a>
+    <!-- ✅ SCRIPT CHAT + ID MEMBER OTOMATIS LENGKAP -->
+    <script>
+        const chatBox = document.getElementById('chatBox');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        let userCountry = "Global";
 
-    <script>!function(e,t){var r,s,o,i;t.__SV||(window.posthog=t,t._i=[],t.init=function(n,a,p){function c(e,t){var r=t.split(".");2==r.length&&(e=e[r[0]],t=r[1]),e[t]=function(){e.push([t].concat(Array.prototype.slice.call(arguments,0)))}}(o=e.createElement("script")).type="text/javascript",o.crossOrigin="anonymous",o.async=!0,o.src=a.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(i=e.getElementsByTagName("script")[0]).parentNode.insertBefore(o,i);var g=t;for(void 0!==p?g=t[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(e){var t="posthog";return"posthog"!==p&&(t+="."+p),e||(t+=" (stub)"),t},g.people.toString=function(){return g.toString(1)+".people (stub)"},r="init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(" "),s=0;s<r.length;s++)c(g,r[s]);t._i.push([n,a,p])},t.__SV=1)}(document,window.posthog||[]),posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs",{api_host:"https://us.i.posthog.com",person_profiles:"identified_only",session_recording:{recordCrossOriginIframes:!0,capturePerformance:!1}})</script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f1447667d377b84',t:'MTc3NzAyNTAxNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+        // Deteksi Negara Otomatis
+        ipapi.location(function(res) {
+            if(res && res.country_name) userCountry = res.country_name;
+        });
+
+        // Ambil Waktu Lengkap
+        function getFullDateTime() {
+            const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const now = new Date();
+            return {
+                dayName: dayNames[now.getDay()],
+                day: now.getDate().toString().padStart(2,'0'),
+                monthName: monthNames[now.getMonth()],
+                year: now.getFullYear(),
+                hours: now.getHours().toString().padStart(2,'0'),
+                minutes: now.getMinutes().toString().padStart(2,'0'),
+                timestamp: now.getTime() // untuk nomor ID unik
+            };
+        }
+
+        // Buat Nomor Member Unik
+        function generateMemberID() {
+            const dt = getFullDateTime();
+            // Format: GLB-20260508-
+// Format: GLB-20260508-4729 (Unik & Urut)
+            const uniqueID = `GLB-${dt.year}${dt.month.padStart(2,'0')}${dt.day}-${Math.floor(dt.timestamp % 10000)}`;
+            return uniqueID;
+        }
+
+        // Tampil Pesan di Chat
+        function addMessage(text, type) {
+            const div = document.createElement('div');
+            div.className = `mb-3 p-3 rounded-xl max-w-[80%] ${type === 'bot' ? 'bg-white/10 text-white mr-auto border border-white/20' : 'bg-accent text-black ml-auto'}`;
+            div.innerHTML = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Simpan riwayat chat ke penyimpanan biar tidak hilang
+            saveChatHistory();
+        }
+
+        // Simpan Riwayat Chat
+        function saveChatHistory() {
+            localStorage.setItem('chatHistory', chatBox.innerHTML);
+        }
+
+        // Muat Riwayat Chat Saat Buka Halaman
+        function loadChatHistory() {
+            if (localStorage.getItem('chatHistory')) {
+                chatBox.innerHTML = localStorage.getItem('chatHistory');
+            }
+        }
+
+        // Logika Jawaban Bot & Sistem ID Member
+        function botReply(userText) {
+            const dt = getFullDateTime();
+            const text = userText.trim().toLowerCase();
+
+            // === PERINTAH DAFTAR / REGISTER ===
+            if (/^register global|daftar global|join global/i.test(text)) {
+                const memberID = generateMemberID();
+
+                // Cek kalau sudah pernah daftar
+                if (localStorage.getItem('memberID')) {
+                    const existingID = localStorage.getItem('memberID');
+                    return `⚠️ <b>PERINGATAN:</b><br>
+                    Kamu sudah terdaftar sebagai anggota resmi ya! ✅<br><br>
+                    🆔 <b>Member ID:</b> ${existingID}<br>
+                    🌍 <b>Negara:</b> ${userCountry}<br>
+                    📅 <b>Terdaftar Sejak:</b> ${localStorage.getItem('joinDate')}<br><br>
+                    Kamu sudah bisa nikmati semua fitur di Sub4Sub World dan komunitas kami ya! 🚀`;
+                }
+
+                // Simpan data member baru
+                localStorage.setItem('memberID', memberID);
+                const joinDate = `${dt.dayName}, ${dt.day} ${dt.monthName} ${dt.year} | Jam: ${dt.hours}:${dt.minutes}`;
+                localStorage.setItem('joinDate', joinDate);
+                localStorage.setItem('memberCountry', userCountry);
+
+                return `✅ <b>✅ PENDAFTARAN BERHASIL! ANGGOTA RESMI DITERIMA 🎉</b><br><br>
+                    🆔 <b>Global Member ID:</b><br>
+                    <span class="bg-accent/20 px-2 py-1 rounded font-bold">${memberID}</span><br><br>
+                    👤 <b>Status:</b> Official Global Member ✅<br>
+                    🌍 <b>Negara Asal:</b> ${userCountry}<br>
+                    📅 <b>Tanggal Bergabung:</b><br>
+                    ${dt.dayName}, ${dt.day} ${dt.monthName} ${dt.year}<br>
+                    ⏰ <b>Jam Masuk:</b> ${dt.hours}:${dt.minutes} WIB<br><br>
+                    📌 <b>INFORMASI PENTING:</b><br>
+                    1. ID ini berlaku seumur hidup, jangan berikan ke siapa pun<br>
+                    2. Saldo Coin kamu otomatis terhubung ke Sub4Sub World<br>
+                    3. Segera ambil coin gratis di: <a href="https://sub4subworld.theglenndrasmusic.com/#earn" target="_blank" class="text-accent underline">sub4subworld.theglenndrasmusic.com/#earn</a><br>
+                    4. Simpan ID ini untuk verifikasi nanti<br><br>
+                    <b>Selamat bergabung! Mari tumbuh dan berkembang bersama kami 🌍🚀</b>`;
+            }
+
+            // === PERINTAH CEK DATA MEMBER ===
+            if (/cek id|data saya|status member|info member/i.test(text)) {
+                if (!localStorage.getItem('memberID')) {
+                    return `❌ Kamu belum terdaftar sebagai anggota resmi ya!<br>
+                    Ketik: <b>REGISTER GLOBAL</b> untuk daftar sekarang dan dapatkan ID kamu 👇`;
+                }
+                return `📋 <b>DATA ANGGOTA RESMI</b><br><br>
+                    🆔 ID: <span class="bg-accent/20 px-2 py-1 rounded">${localStorage.getItem('memberID')}</span><br>
+                    🌍 Negara: ${localStorage.getItem('memberCountry')}<br>
+                    📅 Bergabung: ${localStorage.getItem('joinDate')}<br>
+                    ✅ Status: Aktif & Terverifikasi<br><br>
+                    <b>Semua fitur komunitas sudah terbuka untukmu! 🚀</b>`;
+            }
+
+            // === PERINTAH SALDO / COIN ===
+            if (/saldo|cek coin|jumlah coin/i.test(text)) {
+                let saldo = localStorage.getItem('coinBalance') || 0;
+                return `💰 <b>SALDO COIN SAAT INI</b><br><br>
+                    ✨ ${saldo} Coins ✨<br><br>
+                    ✅ Cara dapatkan lebih banyak:<br>
+                    - Selesaikan tugas di Sub4Sub World (+50 / +40 / +100 Coin)<br>
+                    - Undang teman baru (+30 Coin)<br>
+                    - Aktif berinteraksi setiap hari (+10 Coin)<br><br>
+                    🔗 <a href="https://sub4subworld.theglenndrasmusic.com/#earn" target="_blank" class="text-accent underline">Klik di sini untuk ambil Coin Gratis ➡️</a>`;
+            }
+
+            // === PERINTAH DASAR ===
+            if (/halo|hi|hello|selamat pagi|selamat siang|selamat malam/i.test(text)) {
+                return `👋 <b>Halo! Selamat datang di theglenndrasmusic Official Community 🌍</b><br><br>
+                    🤖 Saya asisten otomatis 24 jam<br>
+                    📋 Ketik <b>REGISTER GLOBAL</b> untuk daftar jadi anggota resmi<br>
+                    💰 Ketik <b>SALDO</b> untuk cek jumlah Coin kamu<br>
+                    🆔 Ketik <b>CEK ID</b> untuk melihat data keanggotaan<br>
+                    🔗 Kunjungi: <a href="https://sub4subworld.theglenndrasmusic.com" target="_blank" class="text-accent underline">Sub4Sub World</a> untuk kumpulkan Coin 🚀`;
+            }
+
+            // === JAWABAN UMUM ===
+            return `🙏 Maaf saya belum mengerti pesan kamu 😅<br>
+                    Silakan gunakan perintah berikut ya:<br>
+                    ✅ <b>REGISTER GLOBAL</b> - Daftar jadi anggota resmi<br>
+                    💰 <b>SALDO</b> - Cek jumlah Coin<br>
+                    🆔 <b>CEK ID</b> - Lihat data diri<br>
+                    ❓ <b>BANTUAN</b> - Panduan lengkap`;
+        }
+
+        // Proses Kirim Pesan
+        function processChat() {
+            const text = userInput.value.trim();
+            if (!text) return;
+            addMessage(text, 'user');
+            userInput.value = '';
+            setTimeout(() => addMessage(botReply(text), 'bot'), 700);
+        }
+
+        sendBtn.addEventListener('click', processChat);
+        userInput.addEventListener('keypress', e => e.key === 'Enter' && processChat());
+
+        // Pesan Awal & Muat Riwayat
+        window.onload = () => {
+            loadChatHistory();
+            // Kalau belum ada riwayat, tampil pesan selamat datang
+            if (!localStorage.getItem('chatHistory')) {
+                addMessage(`🤖 <b>SELAMAT DATANG DI SISTEM KOMUNITAS GLOBAL 🌍</b><br><br>
+                ✨ Sistem ID Member Otomatis AKTIF<br>
+                🔗 Terhubung langsung ke Sub4Sub World<br>
+                💰 Sistem Coin Aman & Tersimpan<br><br>
+                Ketik <b>REGISTER GLOBAL</b> sekarang untuk dapat ID resmi kamu ya! 🚀`, 'bot');
+            }
+        };
+    </script>
+
 </body>
 </html>
