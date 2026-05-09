@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.use_as_origin"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.theglenndrasmusic.sub4subworld",
+      "sha256_cert_fingerprints": [
+        "93:E3:03:47:42:22:6E:B5:7C:89:4F:3A:2D:8B:7E:1C:5A:8D:3F:7B:92:3B:FD:4C:49:9E:6D:8A:1F:70:2E:4B"
+      ]
+    }
+  }
+]
