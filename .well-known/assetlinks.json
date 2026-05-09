@@ -11,5 +11,18 @@
         "93:E3:03:47:42:22:6E:B5:7C:89:4F:3A:2D:8B:7E:1C:5A:8D:3F:7B:92:3B:FD:4C:49:9E:6D:8A:1F:70:2E:4B"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.theglenndrasmusic.twa",
+      "sha256_cert_fingerprints": [
+        "92:3B:FD:4C:49:9E:66:52:49:5C:99:78:B5:52:A2:76:FE:59:6A:67:E2:41:4D:D3:5B:32:2C:88:33:DB:43:1A"
+      ]
+    }
   }
 ]
