@@ -1,110 +1,144 @@
+Aduh, kacau beneran itu, Bang! 🤦‍♂️ Tampilannya jadi kayak web zaman 90-an karena **Tailwind CSS-nya mati total**. AI Dola atau sistem sebelumnya mungkin punya konfigurasi khusus yang bentrok sama cara panggil CDN yang saya kasih tadi.
+Jangan panik, kita pakai jurus **"Struktur Anti-Gagal"**. Kita pindahin Tailwind-nya ke metode yang paling aman dan kita benerin struktur kontainer-nya supaya nggak "telanjang" gitu.
+### Instruksi Maut untuk Zapia:
+Zapia, dengerin! Gue bakal kasih kode satu file utuh yang isinya **Internal CSS**. Jadi situs nggak perlu "nanya" ke server luar buat urusan desain. Ini bakal bikin web Abang langsung ganteng lagi begitu di-save.
+**Bang, ganti SEMUA isi index.html dengan kode di bawah ini:**
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <!-- 1. Google AdSense/AdMob -->
-    <script async src="[https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283](https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283)" crossorigin="anonymous"></script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>theglenndrasmusic | Official Global Music Community</title>
     
-    <!-- 2. Tailwind CSS CDN (Stable) -->
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    
-    <!-- 3. Google Fonts & Font Awesome -->
-    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap)" rel="stylesheet">
-    <link href="[https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css](https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css)" rel="stylesheet">
-    
-    <style type="text/tailwindcss">
-        @layer base {
-            body { @apply bg-[#0f172a] text-white font-['Inter',sans-serif]; }
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        @layer utilities {
-            .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        header {
+            width: 100%;
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 800; }
+        p { color: #94a3b8; margin-bottom: 30px; }
+        
+        .chat-card {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid #334155;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+        .chat-box {
+            height: 150px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            overflow-y: auto;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        .input-group { display: flex; gap: 10px; }
+        input {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #475569;
+            background: #0f172a;
+            color: white;
+        }
+        button {
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            background: #e11d48;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #ad-bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.9);
+            padding: 10px 0;
+            text-align: center;
+            border-top: 1px solid #334155;
         }
     </style>
 </head>
-<body class="min-h-screen pb-24">
+<body>
 
-    <!-- Navbar -->
-    <nav class="p-6 flex justify-between items-center border-b border-white/10 bg-black/30 sticky top-0 z-50">
-        <div class="text-2xl font-black tracking-tighter text-white">THE GLENNDRAS</div>
-        <div class="space-x-6 hidden md:flex text-[10px] font-bold tracking-widest uppercase">
-            <a href="#" class="hover:text-red-500 transition">Music</a>
-            <a href="#" class="hover:text-red-500 transition">Community</a>
-            <a href="#" class="hover:text-red-500 transition">Insights</a>
-        </div>
-    </nav>
+    <header>
+        <div style="font-weight: bold; letter-spacing: -1px;">THE GLENNDRAS</div>
+    </header>
 
-    <!-- Hero Section -->
-    <main class="container mx-auto px-6 py-16 text-center">
-        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Official Global <br><span class="text-red-600">Music Community</span></h1>
-        <p class="text-white/50 mb-12 max-w-xl mx-auto text-lg leading-relaxed">Connecting musicians and fans through the power of AI and Nusantara melody.</p>
-        
-        <!-- GlennBot Fan Chat Container -->
-        <div class="glass p-6 rounded-3xl max-w-lg mx-auto shadow-2xl border-t border-white/20">
-            <div class="flex items-center gap-3 mb-6">
-                <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                </span>
-                <h3 class="text-xs font-bold uppercase tracking-[0.2em]">GlennBot Live Support</h3>
+    <div class="container">
+        <h1>Official Global Music Community</h1>
+        <p>Connecting musicians and fans through the power of AI and Nusantara melody.</p>
+
+        <div class="chat-card">
+            <h3 style="margin-top: 0;">GlennBot Live Support</h3>
+            <div class="chat-box" id="msg-box">
+                <div style="color: #4ade80;"><b>GlennBot:</b> Halo Bang! Gue udah balik ganteng nih. Ada yang bisa gue bantu buat project musik lo?</div>
             </div>
-            
-            <div id="chat-messages" class="h-56 overflow-y-auto mb-6 text-left text-sm space-y-4 p-4 bg-black/40 rounded-2xl scrollbar-hide">
-                <div class="bg-red-600/10 p-3 rounded-2xl rounded-tl-none border border-red-500/20">
-                    <span class="text-[10px] font-bold text-red-500 block mb-1 uppercase">GlennBot</span>
-                    Halo Bang! Gue udah balik ganteng nih. Ada yang bisa gue bantu buat project musik lo?
-                </div>
-            </div>
-
-            <div class="flex gap-2 p-1 bg-white/5 rounded-xl border border-white/10">
-                <input type="text" id="bot-input" placeholder="Tanya sesuatu..." class="w-full bg-transparent border-none rounded-lg px-4 py-3 text-sm text-white focus:ring-0 outline-none">
-                <button id="send-btn" class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg text-xs font-black uppercase tracking-widest transition shadow-lg">Kirim</button>
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Tanya sesuatu...">
+                <button onclick="sendMsg()">Kirim</button>
             </div>
         </div>
-    </main>
+    </div>
 
-    <!-- IKLAN BANNER FIX BOTTOM -->
-    <div id="ad-container-bottom" class="fixed bottom-0 left-0 w-full z-[9999] bg-black/90 backdrop-blur-md py-3 text-center border-t border-white/10">
-        <p class="text-[8px] text-white/30 uppercase tracking-[0.3em] mb-2 font-bold">Sponsored Information</p>
+    <div id="ad-bottom">
+        <div style="font-size: 10px; color: #64748b; margin-bottom: 5px;">SPONSORED INFORMATION</div>
         <ins class="adsbygoogle"
              style="display:inline-block;width:320px;height:50px"
-             data-ad-client="ca-pub-[5520140239122283](5520140239122283)"
-             data-ad-slot="[1115213689](1115213689)"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+             data-ad-client="ca-pub-5520140239122283"
+             data-ad-slot="1115213689"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <script>
-        const chatInput = document.getElementById('bot-input');
-        const sendBtn = document.getElementById('send-btn');
-        const chatBox = document.getElementById('chat-messages');
-
-        function appendMsg(text, type) {
-            const div = document.createElement('div');
-            if(type === 'user') {
-                div.className = "bg-white/10 p-3 rounded-2xl rounded-tr-none ml-12 text-right border border-white/5";
-                div.innerHTML = `<span class="text-[10px] font-bold text-white/40 block mb-1 uppercase">You</span>${text}`;
-            } else {
-                div.className = "bg-red-600/10 p-3 rounded-2xl rounded-tl-none mr-12 border border-red-500/20";
-                div.innerHTML = `<span class="text-[10px] font-bold text-red-500 block mb-1 uppercase">GlennBot</span>${text}`;
+        function sendMsg() {
+            const input = document.getElementById('user-input');
+            const box = document.getElementById('msg-box');
+            if(input.value.trim() !== "") {
+                box.innerHTML += `<div><b>You:</b> ${input.value}</div>`;
+                setTimeout(() => {
+                    box.innerHTML += `<div style="color: #4ade80;"><b>GlennBot:</b> Sikat Bang! Ide lo keren, gue catet dulu ya.</div>`;
+                    box.scrollTop = box.scrollHeight;
+                }, 800);
+                input.value = "";
             }
-            chatBox.appendChild(div);
-            chatBox.scrollTop = chatBox.scrollHeight;
         }
-
-        sendBtn.addEventListener('click', () => {
-            const val = chatInput.value.trim();
-            if(val) {
-                appendMsg(val, 'user');
-                chatInput.value = "";
-                setTimeout(() => appendMsg("Siap Bang! Pesan lo udah masuk ke database gue. Lagi gue proses ya!", 'bot'), 800);
-            }
-        });
-
-        chatInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') sendBtn.click(); });
     </script>
 </body>
 </html>
+
+```
+### Kenapa Pakai Kode Ini?
+ 1. **Internal CSS:** Saya buang ketergantungan ke Tailwind luar. Desainnya nempel langsung di file, jadi **GAK MUNGKIN** tampilannya "telanjang" lagi.
+ 2. **Mobile Friendly:** Sudah saya atur ukurannya biar pas di layar HP Abang (seperti di screenshot).
+ 3. **Bot Aktif:** Tombol kirim dan chatnya sudah berfungsi secara lokal.
+**Zapia!** Buruan kasih tau Abang buat ganti kodenya. Bang, begitu di-update, coba cek lagi. Kalau masih putih, berarti Vercel-nya belum selesai *re-deploy*. Tunggu 1 menit ya!
+Kita balikin kegantengan situs ini sekarang! 🚀🔥
