@@ -3,62 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>theglenndrasmusic | Official Global Music Community</title>
-    <script async src="[https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283](https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283)" crossorigin="anonymous"></script>
+    <title>theglenndrasmusic | Official</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5520140239122283" crossorigin="anonymous"></script>
     <style>
-        body { margin: 0; padding: 0; font-family: sans-serif; background: #0f172a; color: white; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
-        header { width: 100%; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.3); font-weight: 900; }
-        .container { max-width: 600px; width: 90%; padding: 40px 0; text-align: center; flex-grow: 1; }
-        h1 { font-size: 2rem; margin: 0 0 10px 0; }
-        h1 span { color: #e11d48; }
-        p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 30px; }
-        .chat-card { background: #1e293b; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; }
-        .chat-box { height: 180px; background: rgba(0,0,0,0.2); border-radius: 12px; padding: 15px; margin-bottom: 15px; overflow-y: auto; font-size: 0.85rem; }
-        .msg { margin-bottom: 8px; }
-        .bot { color: #4ade80; }
-        .user { color: #38bdf8; text-align: right; }
-        .input-group { display: flex; gap: 8px; }
-        input { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; outline: none; }
-        button { padding: 10px 20px; border-radius: 8px; border: none; background: #e11d48; color: white; font-weight: bold; cursor: pointer; }
-        #ad-bottom { position: fixed; bottom: 0; width: 100%; background: #000; padding: 10px 0; text-align: center; border-top: 1px solid #334155; }
-        .ad-label { font-size: 8px; color: #444; margin-bottom: 4px; }
+        body { margin:0; background:#0f172a; color:white; font-family:sans-serif; display:flex; flex-direction:column; align-items:center; min-height:100vh; }
+        .nav { width:100%; padding:15px; border-bottom:1px solid #1e293b; font-size:12px; font-weight:bold; letter-spacing:1px; text-align:center; color:#64748b; }
+        .main { padding:40px 20px; text-align:center; width:100%; box-sizing:border-box; }
+        h1 { font-size:28px; margin:0; }
+        h2 { font-size:24px; color:#e11d48; margin:0 0 15px 0; }
+        p { font-size:13px; color:#94a3b8; max-width:300px; margin:0 auto 25px auto; line-height:1.5; }
+        .card { background:#1e293b; border-radius:16px; padding:20px; width:90%; max-width:350px; margin:0 auto; border:1px solid #334155; box-shadow:0 10px 30px rgba(0,0,0,0.5); }
+        .chat { background:#0f172a; border-radius:8px; height:140px; padding:12px; text-align:left; font-size:13px; overflow-y:auto; margin-bottom:12px; border:1px solid #1e293b; color:#4ade80; }
+        .row { display:flex; gap:8px; }
+        input { flex:1; background:#0f172a; border:1px solid #334155; border-radius:8px; padding:10px; color:white; font-size:12px; outline:none; }
+        button { background:#e11d48; border:none; border-radius:8px; padding:10px 15px; color:white; font-weight:bold; cursor:pointer; }
+        #ad-bar { position:fixed; bottom:0; width:100%; background:#000; padding:10px 0; text-align:center; border-top:1px solid #1e293b; }
     </style>
 </head>
 <body>
-    <header>THE GLENNDRAS</header>
-    <div class="container">
-        <h1>Official Global <br><span>Music Community</span></h1>
+    <div class="nav">THE GLENNDRAS MUSIC</div>
+    <div class="main">
+        <h1>Official Global</h1>
+        <h2>Community</h2>
         <p>Connecting musicians and fans through the power of AI and Nusantara melody.</p>
-        <div class="chat-card">
-            <div style="font-size: 0.7rem; font-weight: bold; color: #4ade80; margin-bottom: 10px;">● GLENNBOT LIVE</div>
-            <div class="chat-box" id="box">
-                <div class="msg bot"><b>GlennBot:</b> Halo Bang! Udah beneran bersih nih kodenya. Ada yang bisa gue bantu? 🚀</div>
-            </div>
-            <div class="input-group">
-                <input type="text" id="in" placeholder="Tanya sesuatu...">
-                <button onclick="s()">KIRIM</button>
+        <div class="card">
+            <div style="font-size:10px; color:#4ade80; text-align:left; margin-bottom:8px; font-weight:bold;">● GLENNBOT ACTIVE</div>
+            <div class="chat" id="chat"><b>GlennBot:</b> Halo Bang! Udah sinkron nih. Mau update apa kita hari ini? 🎸</div>
+            <div class="row">
+                <input type="text" id="in" placeholder="Tulis pesan...">
+                <button onclick="send()">KIRIM</button>
             </div>
         </div>
     </div>
-    <div id="ad-bottom">
-        <div class="ad-label">SPONSORED</div>
-        <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-[5520140239122283](5520140239122283)" data-ad-slot="[1115213689](1115213689)"></ins>
+    <div id="ad-bar">
+        <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-5520140239122283" data-ad-slot="1115213689"></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <script>
-        function s() {
-            const i = document.getElementById('in');
-            const b = document.getElementById('box');
-            if(i.value.trim()){
-                b.innerHTML += `<div class="msg user"><b>You:</b> ${i.value}</div>`;
-                const v = i.value; i.value = ""; b.scrollTop = b.scrollHeight;
-                setTimeout(() => {
-                    b.innerHTML += `<div class="msg bot"><b>GlennBot:</b> Siap Bang! "${v}" udah gue terima. Gas terus! 🔥</div>`;
-                    b.scrollTop = b.scrollHeight;
-                }, 800);
+        function send(){
+            var i=document.getElementById('in'), c=document.getElementById('chat');
+            if(i.value){
+                c.innerHTML += '<div style="color:#fff;margin-top:8px"><b>You:</b> '+i.value+'</div>';
+                setTimeout(function(){ 
+                    c.innerHTML += '<div style="margin-top:4px"><b>Bot:</b> Sikat Bang! Ide lo masuk list.</div>'; 
+                    c.scrollTop = c.scrollHeight; 
+                }, 600);
+                i.value = '';
             }
         }
-        document.getElementById('in').addEventListener('keypress', (e) => { if(e.key==='Enter') s(); });
     </script>
 </body>
 </html>
